@@ -1,0 +1,15 @@
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Release\Database1.mdf
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Release\Database1_log.ldf
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Release\Student_management.exe.config
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Release\Student_management.exe
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Release\Student_management.pdb
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Release\MetroFramework.Design.dll
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Release\MetroFramework.dll
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Release\MetroFramework.Fonts.dll
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Release\Student_management.Form1.resources
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Release\Student_management.Properties.Resources.resources
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Release\Student_management.csproj.GenerateResource.cache
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Release\Student_management.csproj.CoreCompileInputs.cache
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Release\Student_management.csproj.CopyComplete
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Release\Student_management.exe
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Release\Student_management.pdb

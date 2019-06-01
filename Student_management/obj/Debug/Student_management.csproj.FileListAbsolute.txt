@@ -1,0 +1,16 @@
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Debug\Student_management.exe.config
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Debug\Student_management.exe
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Debug\Student_management.pdb
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Debug\Student_management.csprojAssemblyReference.cache
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Debug\Student_management.Form1.resources
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Debug\Student_management.Properties.Resources.resources
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Debug\Student_management.csproj.GenerateResource.cache
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Debug\Student_management.csproj.CoreCompileInputs.cache
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Debug\Student_management.exe
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Debug\Student_management.pdb
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Debug\Database1.mdf
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Debug\Database1_log.ldf
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Debug\MetroFramework.Design.dll
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Debug\MetroFramework.dll
+C:\Users\Sina\source\repos\Student_management\Student_management\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Debug\Student_management.csproj.CopyComplete
