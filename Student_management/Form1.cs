@@ -23,8 +23,8 @@ namespace Student_management
             PW = panel4.Location;
             Move1 = false;
             Move2 = false;
-            teacherDataGridView.Hide();
-            Student_table.Hide();
+            
+            
 
         }
 
@@ -68,14 +68,9 @@ namespace Student_management
             //panel4.Top = button1.Top;
 
             //panel4.Location = new Point(318, 187);
-
-            teacherDataGridView.Hide();
-            Student_table.Show();
             timer1.Start();
             Move2 = true;
-            
-            
-            
+          
 
         }
 
@@ -84,13 +79,9 @@ namespace Student_management
             panel4.Height = button2.Height;
             //change panel 4 postion to the same as button
             //panel4.Location = new Point(318,360);
-            teacherDataGridView.Show();
-            Student_table.Hide();
-
             timer1.Start();
             Move1 = true;
             
-
 
         }
 
@@ -147,28 +138,12 @@ namespace Student_management
 
         }
 
-        private void Search_button_Click(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                this.teacherTableAdapter.SearchByName2(this.student_info.Teacher, Search_TB.Text);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
-
-
-        private void SearchByName2ToolStripButton_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void SearchByName2ToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
+            sea
+            DataView dv = new DataView(student_info.Teacher);
+            dv.RowFilter = string.Format("Name LIKE '%{0}%'", textBox1.Text);
+            teacherMetroGrid.DataSource = dv;
         }
     }
 }
