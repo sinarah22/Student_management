@@ -27,14 +27,18 @@ namespace Student_management
             
 
         }
+        int selectedRow;
+        DataTable table = new DataTable();
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'student_info.Teacher' table. You can move, or remove it, as needed.
-            this.teacherTableAdapter.Fill(this.student_info.Teacher);
-            // TODO: This line of code loads data into the 'student_info.Table' table. You can move, or remove it, as needed.
-            this.tableTableAdapter.Fill(this.student_info.Table);
-            
+           
+            table.Columns.Add("id", typeof(int));
+            table.Columns.Add("Name", typeof(string));
+            table.Columns.Add("Last Name", typeof(string));
+            teacherMetroGrid.DataSource = table;
+
+
 
         }
 
@@ -48,18 +52,34 @@ namespace Student_management
 
         private void Add_Click(object sender, EventArgs e)
         {
-            this.tableBindingSource.AddNew();
-           //while(flag=false) {
-           //    if (Error_Label.Text == "")
-           //    {
-           //        idTextBox.Text = "can not save";
-           //    }
-           //    else
-           //    {
-           //        Error_Label.Text = "added saucdesfully";
-           //        flag = true;
-           //    }
-           //}
+            try
+            {
+                int idnew = Int32.Parse(idTextBox.Text);
+                try {
+                    int n;
+                    bool isNumeric = true;
+                    isNumeric = int.TryParse(last_NameTextBox.Text, out n);
+                    if (isNumeric == true)
+                    {
+                        throw new FormatException();                       
+                    }
+                    
+                    table.Rows.Add(idnew, nameTextBox.Text, last_NameTextBox.Text);
+                    teacherMetroGrid.DataSource = table;
+                }
+                catch(FormatException ex2)
+                {
+                    MessageBox.Show("hiiiiii");
+
+                }
+                
+            }
+            catch(FormatException ex)
+            {
+                MessageBox.Show("The new ID should be a number");
+            }
+            
+
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -135,15 +155,21 @@ namespace Student_management
 
         private void TeacherDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            selectedRow = e.RowIndex;
+            DataGridViewRow row = teacherMetroGrid.Rows[selectedRow];
+            idTextBox.Text = row.Cells[0].Value.ToString();
+            nameTextBox.Text = row.Cells[1].Value.ToString();
+            last_NameTextBox.Text = row.Cells[2].Value.ToString();
 
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-            sea
-            DataView dv = new DataView(student_info.Teacher);
-            dv.RowFilter = string.Format("Name LIKE '%{0}%'", textBox1.Text);
-            teacherMetroGrid.DataSource = dv;
+        {            
+            DataView table = new DataView(student_info.Teacher);
+            table.RowFilter = string.Format("Name LIKE '%{0}%'", textBox1.Text);
+            teacherMetroGrid.DataSource = table;
+            
+            
         }
     }
 }

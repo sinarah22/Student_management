@@ -9,7 +9,7 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TableTableAdapter" GeneratorDataComponentClassName="TableTableAdapter" Name="Table" UserDataComponentName="TableTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="Database1ConnectionString (Settings)" DbObjectName="dbo.[Table]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="Database1ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Table] WHERE (([Id] = @Original_Id) AND ((@IsNull_Name = 1 AND [Name] IS NULL) OR ([Name] = @Original_Name)) AND ((@IsNull_Last_Name = 1 AND [Last_Name] IS NULL) OR ([Last_Name] = @Original_Last_Name)) AND ((@IsNull_Grade = 1 AND [Grade] IS NULL) OR ([Grade] = @Original_Grade)))</CommandText>
@@ -38,7 +38,7 @@ SELECT Id, Name, Last_Name, Grade FROM [Table] WHERE (Id = @Id)</CommandText>
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT Id, Name, Last_Name, Grade FROM dbo.[Table]</CommandText>
+                    <CommandText />
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -174,7 +174,7 @@ WHERE  (Name LIKE @Name + N'%')</CommandText>
   <xs:element name="student_info" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="student_info" msprop:Generator_UserDSName="student_info">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Table" msprop:Generator_TableClassName="TableDataTable" msprop:Generator_TableVarName="tableTable" msprop:Generator_TablePropName="Table" msprop:Generator_RowDeletingName="TableRowDeleting" msprop:Generator_RowChangingName="TableRowChanging" msprop:Generator_RowEvHandlerName="TableRowChangeEventHandler" msprop:Generator_RowDeletedName="TableRowDeleted" msprop:Generator_UserTableName="Table" msprop:Generator_RowChangedName="TableRowChanged" msprop:Generator_RowEvArgName="TableRowChangeEvent" msprop:Generator_RowClassName="TableRow">
+        <xs:element name="Table" msprop:Generator_TableClassName="TableDataTable" msprop:Generator_TableVarName="tableTable" msprop:Generator_RowChangedName="TableRowChanged" msprop:Generator_TablePropName="Table" msprop:Generator_RowDeletingName="TableRowDeleting" msprop:Generator_RowChangingName="TableRowChanging" msprop:Generator_RowEvHandlerName="TableRowChangeEventHandler" msprop:Generator_RowDeletedName="TableRowDeleted" msprop:Generator_RowClassName="TableRow" msprop:Generator_UserTableName="Table" msprop:Generator_RowEvArgName="TableRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -196,7 +196,7 @@ WHERE  (Name LIKE @Name + N'%')</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Teacher" msprop:Generator_TableClassName="TeacherDataTable" msprop:Generator_TableVarName="tableTeacher" msprop:Generator_RowChangedName="TeacherRowChanged" msprop:Generator_TablePropName="Teacher" msprop:Generator_RowDeletingName="TeacherRowDeleting" msprop:Generator_RowChangingName="TeacherRowChanging" msprop:Generator_RowEvHandlerName="TeacherRowChangeEventHandler" msprop:Generator_RowDeletedName="TeacherRowDeleted" msprop:Generator_RowClassName="TeacherRow" msprop:Generator_UserTableName="Teacher" msprop:Generator_RowEvArgName="TeacherRowChangeEvent">
+        <xs:element name="Teacher" msprop:Generator_TableClassName="TeacherDataTable" msprop:Generator_TableVarName="tableTeacher" msprop:Generator_TablePropName="Teacher" msprop:Generator_RowDeletingName="TeacherRowDeleting" msprop:Generator_RowChangingName="TeacherRowChanging" msprop:Generator_RowEvHandlerName="TeacherRowChangeEventHandler" msprop:Generator_RowDeletedName="TeacherRowDeleted" msprop:Generator_UserTableName="Teacher" msprop:Generator_RowChangedName="TeacherRowChanged" msprop:Generator_RowEvArgName="TeacherRowChangeEvent" msprop:Generator_RowClassName="TeacherRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />

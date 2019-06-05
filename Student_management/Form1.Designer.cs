@@ -33,9 +33,10 @@
             System.Windows.Forms.Label nameLabel;
             System.Windows.Forms.Label last_NameLabel;
             System.Windows.Forms.Label idLabel;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.Label label2;
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -70,6 +71,7 @@
             nameLabel = new System.Windows.Forms.Label();
             last_NameLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -88,7 +90,7 @@
             gradeLabel.AutoSize = true;
             gradeLabel.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             gradeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            gradeLabel.Location = new System.Drawing.Point(1005, 390);
+            gradeLabel.Location = new System.Drawing.Point(887, 390);
             gradeLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             gradeLabel.Name = "gradeLabel";
             gradeLabel.Size = new System.Drawing.Size(75, 23);
@@ -100,7 +102,7 @@
             nameLabel.AutoSize = true;
             nameLabel.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            nameLabel.Location = new System.Drawing.Point(1005, 313);
+            nameLabel.Location = new System.Drawing.Point(887, 313);
             nameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new System.Drawing.Size(72, 23);
@@ -112,7 +114,7 @@
             last_NameLabel.AutoSize = true;
             last_NameLabel.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             last_NameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            last_NameLabel.Location = new System.Drawing.Point(1005, 352);
+            last_NameLabel.Location = new System.Drawing.Point(887, 352);
             last_NameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             last_NameLabel.Name = "last_NameLabel";
             last_NameLabel.Size = new System.Drawing.Size(112, 23);
@@ -124,7 +126,7 @@
             idLabel.AutoSize = true;
             idLabel.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             idLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            idLabel.Location = new System.Drawing.Point(1005, 274);
+            idLabel.Location = new System.Drawing.Point(887, 274);
             idLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(33, 23);
@@ -183,7 +185,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(312, 614);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1096, 90);
+            this.panel2.Size = new System.Drawing.Size(931, 90);
             this.panel2.TabIndex = 11;
             // 
             // panel3
@@ -223,7 +225,7 @@
             // 
             this.last_NameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(66)))));
             this.last_NameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Last_Name", true));
-            this.last_NameTextBox.Location = new System.Drawing.Point(1119, 348);
+            this.last_NameTextBox.Location = new System.Drawing.Point(1001, 348);
             this.last_NameTextBox.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.last_NameTextBox.Name = "last_NameTextBox";
             this.last_NameTextBox.Size = new System.Drawing.Size(156, 30);
@@ -243,7 +245,7 @@
             // 
             this.nameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(57)))));
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(1119, 309);
+            this.nameTextBox.Location = new System.Drawing.Point(1001, 309);
             this.nameTextBox.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(156, 30);
@@ -275,7 +277,7 @@
             // 
             this.gradeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.gradeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Grade", true));
-            this.gradeTextBox.Location = new System.Drawing.Point(1119, 386);
+            this.gradeTextBox.Location = new System.Drawing.Point(1001, 386);
             this.gradeTextBox.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.gradeTextBox.Name = "gradeTextBox";
             this.gradeTextBox.Size = new System.Drawing.Size(156, 30);
@@ -285,7 +287,7 @@
             // 
             this.idTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(1119, 271);
+            this.idTextBox.Location = new System.Drawing.Point(1001, 271);
             this.idTextBox.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(156, 30);
@@ -293,7 +295,7 @@
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(1119, 436);
+            this.Add.Location = new System.Drawing.Point(1001, 436);
             this.Add.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(156, 45);
@@ -341,18 +343,18 @@
             // 
             this.teacherMetroGrid.AllowUserToResizeRows = false;
             this.teacherMetroGrid.AutoGenerateColumns = false;
-            this.teacherMetroGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.teacherMetroGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.teacherMetroGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.teacherMetroGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.teacherMetroGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(172)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.teacherMetroGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(172)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.teacherMetroGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.teacherMetroGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.teacherMetroGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -360,28 +362,28 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewCheckBoxColumn1});
             this.teacherMetroGrid.DataSource = this.teacherBindingSource;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.teacherMetroGrid.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.teacherMetroGrid.DefaultCellStyle = dataGridViewCellStyle2;
             this.teacherMetroGrid.EnableHeadersVisualStyles = false;
             this.teacherMetroGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.teacherMetroGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.teacherMetroGrid.GridColor = System.Drawing.Color.Gray;
             this.teacherMetroGrid.Location = new System.Drawing.Point(351, 111);
             this.teacherMetroGrid.Name = "teacherMetroGrid";
             this.teacherMetroGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(172)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.teacherMetroGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(172)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.teacherMetroGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.teacherMetroGrid.RowHeadersWidth = 51;
             this.teacherMetroGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.teacherMetroGrid.RowTemplate.Height = 24;
@@ -423,17 +425,30 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1119, 111);
+            this.textBox1.Location = new System.Drawing.Point(1001, 132);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(152, 30);
             this.textBox1.TabIndex = 21;
             this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            label2.Location = new System.Drawing.Point(887, 132);
+            label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(84, 23);
+            label2.TabIndex = 22;
+            label2.Text = "Search :";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1408, 704);
+            this.ClientSize = new System.Drawing.Size(1243, 704);
+            this.Controls.Add(label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.teacherMetroGrid);
             this.Controls.Add(this.panel4);

@@ -1376,7 +1376,7 @@ SELECT Id, Name, Last_Name, Grade FROM [Table] WHERE (Id = @Id)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id, Name, Last_Name, Grade FROM dbo.[Table]";
+            this._commandCollection[0].CommandText = "";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
