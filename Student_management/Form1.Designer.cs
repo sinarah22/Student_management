@@ -33,10 +33,11 @@
             System.Windows.Forms.Label nameLabel;
             System.Windows.Forms.Label last_NameLabel;
             System.Windows.Forms.Label idLabel;
+            System.Windows.Forms.Label label2;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.Label label2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -47,26 +48,26 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.last_NameTextBox = new System.Windows.Forms.TextBox();
-            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.student_info = new Student_management.student_info();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.miniToolStrip = new System.Windows.Forms.BindingNavigator(this.components);
             this.gradeTextBox = new System.Windows.Forms.TextBox();
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.Add = new MetroFramework.Controls.MetroButton();
-            this.teacherBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableTableAdapter = new Student_management.student_infoTableAdapters.TableTableAdapter();
-            this.tableAdapterManager = new Student_management.student_infoTableAdapters.TableAdapterManager();
-            this.teacherTableAdapter = new Student_management.student_infoTableAdapters.TeacherTableAdapter();
-            this.teacherBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.teacherBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.teacherBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.teacherMetroGrid = new MetroFramework.Controls.MetroGrid();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.teacherBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.student_info = new Student_management.student_info();
+            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.teacherBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tableTableAdapter = new Student_management.student_infoTableAdapters.TableTableAdapter();
+            this.tableAdapterManager = new Student_management.student_infoTableAdapters.TableAdapterManager();
+            this.teacherTableAdapter = new Student_management.student_infoTableAdapters.TeacherTableAdapter();
+            this.teacherBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.teacherBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             gradeLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             last_NameLabel = new System.Windows.Forms.Label();
@@ -75,14 +76,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.student_info)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.miniToolStrip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teacherMetroGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.student_info)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teacherMetroGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // gradeLabel
@@ -133,6 +134,18 @@
             idLabel.TabIndex = 12;
             idLabel.Text = "ID:";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            label2.Location = new System.Drawing.Point(887, 132);
+            label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(84, 23);
+            label2.TabIndex = 22;
+            label2.Text = "Search :";
+            // 
             // metroStyleManager1
             // 
             this.metroStyleManager1.Owner = null;
@@ -146,7 +159,7 @@
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 60);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(312, 644);
+            this.panel1.Size = new System.Drawing.Size(312, 530);
             this.panel1.TabIndex = 10;
             // 
             // button2
@@ -183,9 +196,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(312, 614);
+            this.panel2.Location = new System.Drawing.Point(312, 500);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(931, 90);
+            this.panel2.Size = new System.Drawing.Size(966, 90);
             this.panel2.TabIndex = 11;
             // 
             // panel3
@@ -230,16 +243,6 @@
             this.last_NameTextBox.Name = "last_NameTextBox";
             this.last_NameTextBox.Size = new System.Drawing.Size(156, 30);
             this.last_NameTextBox.TabIndex = 12;
-            // 
-            // tableBindingSource
-            // 
-            this.tableBindingSource.DataMember = "Table";
-            this.tableBindingSource.DataSource = this.student_info;
-            // 
-            // student_info
-            // 
-            this.student_info.DataSetName = "student_info";
-            this.student_info.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // nameTextBox
             // 
@@ -304,40 +307,13 @@
             this.Add.UseSelectable = true;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
-            // teacherBindingSource
+            // textBox1
             // 
-            this.teacherBindingSource.DataMember = "Teacher";
-            this.teacherBindingSource.DataSource = this.student_info;
-            // 
-            // tableTableAdapter
-            // 
-            this.tableTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
-            this.tableAdapterManager.TeacherTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Student_management.student_infoTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // teacherTableAdapter
-            // 
-            this.teacherTableAdapter.ClearBeforeFill = true;
-            // 
-            // teacherBindingSource1
-            // 
-            this.teacherBindingSource1.DataMember = "Teacher";
-            this.teacherBindingSource1.DataSource = this.student_info;
-            // 
-            // teacherBindingSource2
-            // 
-            this.teacherBindingSource2.DataMember = "Teacher";
-            this.teacherBindingSource2.DataSource = this.student_info;
-            // 
-            // teacherBindingSource3
-            // 
-            this.teacherBindingSource3.DataMember = "Teacher";
-            this.teacherBindingSource3.DataSource = this.student_info;
+            this.textBox1.Location = new System.Drawing.Point(1001, 132);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(152, 30);
+            this.textBox1.TabIndex = 21;
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // teacherMetroGrid
             // 
@@ -361,7 +337,7 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewCheckBoxColumn1});
-            this.teacherMetroGrid.DataSource = this.teacherBindingSource;
+            this.teacherMetroGrid.DataSource = this.teacherBindingSource1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -423,31 +399,56 @@
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             this.dataGridViewCheckBoxColumn1.Width = 125;
             // 
-            // textBox1
+            // teacherBindingSource1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1001, 132);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 30);
-            this.textBox1.TabIndex = 21;
-            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            this.teacherBindingSource1.DataMember = "Teacher";
+            this.teacherBindingSource1.DataSource = this.student_info;
             // 
-            // label2
+            // student_info
             // 
-            label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            label2.Location = new System.Drawing.Point(887, 132);
-            label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(84, 23);
-            label2.TabIndex = 22;
-            label2.Text = "Search :";
+            this.student_info.DataSetName = "student_info";
+            this.student_info.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableBindingSource
+            // 
+            this.tableBindingSource.DataMember = "Table";
+            this.tableBindingSource.DataSource = this.student_info;
+            // 
+            // teacherBindingSource
+            // 
+            this.teacherBindingSource.DataMember = "Teacher";
+            this.teacherBindingSource.DataSource = this.student_info;
+            // 
+            // tableTableAdapter
+            // 
+            this.tableTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
+            this.tableAdapterManager.TeacherTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Student_management.student_infoTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // teacherTableAdapter
+            // 
+            this.teacherTableAdapter.ClearBeforeFill = true;
+            // 
+            // teacherBindingSource2
+            // 
+            this.teacherBindingSource2.DataMember = "Teacher";
+            this.teacherBindingSource2.DataSource = this.student_info;
+            // 
+            // teacherBindingSource3
+            // 
+            this.teacherBindingSource3.DataMember = "Teacher";
+            this.teacherBindingSource3.DataSource = this.student_info;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1243, 704);
+            this.ClientSize = new System.Drawing.Size(1278, 590);
             this.Controls.Add(label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.teacherMetroGrid);
@@ -465,6 +466,7 @@
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.gradeTextBox);
             this.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(0, 60, 0, 0);
@@ -476,14 +478,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.student_info)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.miniToolStrip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teacherMetroGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.student_info)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teacherMetroGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -515,12 +517,12 @@
         private System.Windows.Forms.BindingSource teacherBindingSource1;
         private System.Windows.Forms.BindingSource teacherBindingSource2;
         private System.Windows.Forms.BindingSource teacherBindingSource3;
-        private MetroFramework.Controls.MetroGrid teacherMetroGrid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private MetroFramework.Controls.MetroGrid teacherMetroGrid;
     }
 }
 

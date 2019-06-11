@@ -23,38 +23,43 @@ namespace Student_management
             PW = panel4.Location;
             Move1 = false;
             Move2 = false;
-            
-            
+            teacherMetroGrid.Hide();
 
         }
         int selectedRow;
         DataTable table = new DataTable();
+        
+        
 
-        private void Form1_Load(object sender, EventArgs e)
+
+        private void TeacherBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-           
-            table.Columns.Add("id", typeof(int));
-            table.Columns.Add("Name", typeof(string));
-            table.Columns.Add("Last Name", typeof(string));
-            teacherMetroGrid.DataSource = table;
-
-
+            this.Validate();
+            this.teacherBindingSource1.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.student_info);
 
         }
 
-        private void TableBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.tableBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.student_info);
 
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.teacherTableAdapter.Fill(this.student_info.Teacher);
+            table.Columns.Add("id", typeof(int));
+            table.Columns.Add("Name", typeof(string));
+            table.Columns.Add("Last Name", typeof(string));
+            
+           
+
+
+            
         }
 
         private void Add_Click(object sender, EventArgs e)
         {
             try
             {
-                int idnew = Int32.Parse(idTextBox.Text);
+                int idnew = Int32.Parse(idTextBox.Text);              
                 try {
                     int n;
                     bool isNumeric = true;
@@ -63,13 +68,15 @@ namespace Student_management
                     {
                         throw new FormatException();                       
                     }
-                    
-                    table.Rows.Add(idnew, nameTextBox.Text, last_NameTextBox.Text);
-                    teacherMetroGrid.DataSource = table;
+                    this.teacherTableAdapter.Insert(idnew, nameTextBox.Text, last_NameTextBox.Text,true);
+                    //table.Rows.Add(idnew, nameTextBox.Text, last_NameTextBox.Text);
+                    this.teacherTableAdapter.Fill(this.student_info.Teacher);
+
+
                 }
-                catch(FormatException ex2)
+                catch (FormatException ex2)
                 {
-                    MessageBox.Show("hiiiiii");
+                    MessageBox.Show("Name can`t be a number");
 
                 }
                 
@@ -78,7 +85,9 @@ namespace Student_management
             {
                 MessageBox.Show("The new ID should be a number");
             }
-            
+            idTextBox.Text = "";
+            nameTextBox.Text = "";
+            last_NameTextBox.Text = "";
 
         }
 
@@ -90,6 +99,8 @@ namespace Student_management
             //panel4.Location = new Point(318, 187);
             timer1.Start();
             Move2 = true;
+            teacherMetroGrid.Hide();
+            
           
 
         }
@@ -101,6 +112,7 @@ namespace Student_management
             //panel4.Location = new Point(318,360);
             timer1.Start();
             Move1 = true;
+            teacherMetroGrid.Show();
             
 
         }
@@ -171,5 +183,6 @@ namespace Student_management
             
             
         }
+
     }
 }

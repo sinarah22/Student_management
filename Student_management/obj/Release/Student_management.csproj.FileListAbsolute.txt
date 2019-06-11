@@ -13,3 +13,4 @@ C:\Users\Sina\source\repos\Student_management\Student_management\obj\Release\Stu
 C:\Users\Sina\source\repos\Student_management\Student_management\obj\Release\Student_management.csproj.CopyComplete
 C:\Users\Sina\source\repos\Student_management\Student_management\obj\Release\Student_management.exe
 C:\Users\Sina\source\repos\Student_management\Student_management\obj\Release\Student_management.pdb
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Release\Student_management.csprojAssemblyReference.cache

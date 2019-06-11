@@ -129,6 +129,9 @@
   <metadata name="idLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <metadata name="label2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
   <metadata name="metroStyleManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>944, 15</value>
   </metadata>
@@ -138,17 +141,14 @@
   <metadata name="tableBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>158, 17</value>
   </metadata>
-  <metadata name="tableBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>158, 17</value>
-  </metadata>
-  <metadata name="student_info.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="student_info.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="miniToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>119, 33</value>
+  </metadata>
+  <metadata name="teacherBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>119, 54</value>
   </metadata>
   <metadata name="teacherBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1140, 17</value>
@@ -162,16 +162,87 @@
   <metadata name="teacherTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1346, 17</value>
   </metadata>
-  <metadata name="teacherBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>119, 54</value>
-  </metadata>
   <metadata name="teacherBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>333, 54</value>
   </metadata>
   <metadata name="teacherBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>547, 54</value>
   </metadata>
-  <metadata name="label2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAACMuAAAjLgAAAAAAAAAA
+        AACPj4//Y2Nj/2NjY/9jY2P/Y2Nj/2NjY/9jY2P/Y2Nj/2NjY/9jY2P/Y2Nj/2NjY/9jY2P/Y2Nj/2Nj
+        Y/9jY2P/Y2Nj/2NjY/9jY2P/Y2Nj/2NjY/9jY2P/Y2Nj/2NjY/9jY2P/Y2Nj/2NjY/9jY2P/Y2Nj/2Nj
+        Y/9jY2P/jY2N/xMTE/8gICD/JiYm/yYmJv8mJib/JiYm/yYmJv8mJib/JiYm/yYmJv8mJib/JiYm/yYm
+        Jv8mJib/JiYm/yYmJv8mJib/JiYm/yYmJv8mJib/JiYm/yYmJv8mJib/JiYm/yYmJv8mJib/JiYm/yYm
+        Jv8lJSX/Gxsb/xQUFP8QEBD/Dw8P/ycnJ/8wMDD/Li4u/y4uLv8uLi7/Li4u/y4uLv8uLi7/Li4u/y4u
+        Lv8uLi7/Li4u/y8vL/8xMTH/MTEx/zExMf8xMTH/Ly8v/y4uLv8uLi7/Li4u/y4uLv8uLi7/Li4u/y4u
+        Lv8uLi7/Li4u/y0tLf8kJCT/GRkZ/wwMDP98fHz/QUFB/xYWFv9FRUX/SUlJ/0pKSv9LS0v/SUlJ/0hI
+        SP9JSUn/S0tL/0pKSv9JSUn/MDAw/wMEBf8FBwn/BQcJ/wMEBf8wLy//SUlJ/0pKSv9LS0v/SUlJ/0hI
+        SP9JSUn/S0tL/0tLS/9FRUX/Pz8//xUVFf9AQED/enp6///////FxcX/QkJC/9DQ0P/W1tb/urq7/7W1
+        tv/Nzc3/29vb/8fHyP+0tLX/vr6//9zc3P+RkJD/DBEY/xwqPf8cKj3/DBEY/4+Ojv/c3Nz/vr6//7S0
+        tf/Hx8f/29vb/83Nzf+1tbf/ubm7/8nJyf++vr7/PT09/8PDw////////////8fHx/9CQkL/1tbW/4+P
+        kP8wKyD/NS8e/15dXP/Kysr/R0ZD/zkyH/8xLib/rq6u/5WVlP8OFBz/ITFI/yExSP8OFB3/k5OS/6+v
+        sP8yLyf/OTIf/0ZEQf/Jycr/X19e/zUvHv8wKyD/goKD/8PDw/8+Pj7/xsbG////////////x8fH/0JC
+        Qv/W1tb/bGxt/3ZfJ/+vjjv/Qj85/7W1tv87NSb/xJ9D/1ZGH/+QkZP/lpaW/w4UHP8hMUf/ITFH/w4U
+        HP+UlJT/kpOV/1VFH//FoEP/OzUl/7S1tv9CQDr/ro06/3hhKP9gYGH/w8PD/z4+Pv/Gxsb/////////
+        ///Hx8f/QkJC/9bW1v+BgYH/MSkV/0I2GP9NTUr/w8PE/zk2Mf9KPBv/LCcY/6OjpP+WlZX/DhQc/yEx
+        R/8hMUf/DhQc/5STk/+kpaX/LCcZ/0o8G/84NTD/wsPD/09OTP9CNhj/MioV/3R0df/Dw8P/Pj4+/8bG
+        xv///////////8fHx/9CQkL/1NTU/9LS0v+io6T/m5ye/8LCwv/d3d3/ubm5/5manP+pqar/29vb/5SU
+        k/8OFBz/ITFH/yExR/8OFBz/kpKR/9vb2/+pqqv/mZqc/7i4uP/d3d3/w8PD/5ucnv+ioqT/xcXF/8HB
+        wf8+Pj7/xsbG////////////x8fH/0JCQv/U1NT/wMDA/3V1dv9tbW7/paWl/9ra2v+VlZX/a2ts/35+
+        fv/Pz8//sK+v/xUYHP8XIzX/FyQ1/xUXG/+urq7/z8/P/39/f/9ra2z/lJSU/9ra2v+mpqb/bW1u/3V1
+        df+zs7P/wcHB/z4+Pv/Gxsb////////////Hx8f/QkJC/9bW1v90dHX/RjkW/2dTIf9DQT7/u7y9/zMv
+        Jv90Xib/Ny0V/5SVlv/d3d3/fn5+/ycoKv8nKCr/fX19/93d3f+Wl5j/NiwV/3VeJv8yLyX/u7u8/0RD
+        P/9nUiD/SDoX/2hoaf/Dw8P/Pj4+/8bGxv///////////8fHx/9CQkL/1tbW/21tbv9mUyH/mHsy/0E+
+        Of+2trj/NzIl/6qKOf9LPhv/jo6Q/+Li4v/f39//w8PD/8PDwv/f39//4uLi/5CQkv9KPRv/q4s5/zcy
+        JP+1trf/QkA7/5Z6Mf9oVCL/YWJi/8PDw/8+Pj7/xsbG////////////x8fH/0JCQv/V1dX/paWl/0FA
+        Pf89PDf/enp6/9LS0v9kZGP/PTs2/0lIRv+7u7v/1tbW/4KBgP9ARUf/QEVH/4GAf//W1tb/vLy8/0pJ
+        R/89Ozb/Y2Ni/9LS0v98fHv/PTw3/0FAPf+YmJj/wsLC/z4+Pv/Gxsb////////////Hx8f/Q0ND/9bW
+        1v/h4eH/2NjY/9bW1v/e3t7/4eHh/9zc3P/T09P/19fX/93d3f9zcnL/BzpK/wmMtv8Jj7n/BzxM/3Fw
+        cP/d3d3/19fX/9PT0//c3Nz/4eHh/97e3v/W1tb/2NjY/9TU1P/Dw8P/Pz8//8XFxf//////1dXV/5+f
+        n/81NTX/qamn/7Gxr/+xsa//sbGw/7Gxsf+wsK7/wMC//97e3v/f39//x8bG/yU2PP8Mos//ELbp/w2U
+        vv8Ljrf/JDc9/8bFxf/f39//3t7e/8HAwP+wsK7/sbGx/7GxsP+xsa//qKil/5qal/8yMjH/np6e/9XV
+        1f83Nzb/CwsX/wYGLf8ODjX/Dw82/w8PN/8PDyz/Dg4R/xMVMv8lJjP/o6Oh/+Hh4v+/vb3/GzY+/w+2
+        6P8KbIv/AyQu/wuEqf8aOEL/vLq5/9fX1/+dnJv/Jicz/xMVMv8ODhH/Dw8r/w8PN/8ODjX/DQ01/wYG
+        Lf8LCxj/NTU0/7S0s/8dHS7/BASC/wcHsP8HB63/Bweu/wYGov8CAj3/DRJT/xMbhP8iJDL/qqqo/9fW
+        1v9BRkf/BnKV/wyFq/8Mg6n/BnOW/z5DRf/JyMj/m5ua/yAhL/8TGoP/DRJV/wICPP8GBqH/Bweu/wcH
+        rf8HB7D/BASD/xwcLv+ysrH//////6KioP8PDzL/Bgad/wgIuv8ICLj/CAi5/wcHpf8DAzv/EBZk/xMa
+        gv8nJzT/sbGv/7Kxsf8xOz7/Cj5P/wo/UP8vOTz/pKOj/6Kiof8kJTH/ExqB/xEWZv8DAzr/Bwel/wgI
+        uf8ICLj/CAi6/wYGnv8ODjP/oaGf////////////+/v7/4ODgf8GBjz/Bwep/wgIuP8ICLf/CAi5/wcH
+        ov8DAzf/ERdq/xIZff8rLDb/tra1/8zLy/+em5r/nJmZ/7++vv+np6X/KCky/xIZfP8SGGv/AwM2/wcH
+        of8ICLn/CAi3/wgIuP8HB6r/BgY9/4GBf//7+/v/////////////////9PTz/2RkY/8DA03/CAiy/wgI
+        uP8ICLf/CAi5/wcHnv8DAzT/Ehlw/xEYeP8wMTj/urq5/+Li4v/Y2Nj/q6uq/y0tNf8RGHf/Exlx/wMD
+        M/8HB53/CAi5/wgIt/8ICLj/CAiy/wICTv9iYmH/8/Pz////////////////////////////5+fm/0dH
+        Sv8CAmL/CAi3/wgIt/8ICLf/CAi5/wcHmv8DBDH/Exp2/xAXcv81Njz/tra1/6+vrv8yMjj/EBdx/xMa
+        d/8DBDH/BwaZ/wgIuf8ICLf/CAi3/wgIt/8CAmP/RUVJ/+bm5f//////////////////////////////
+        ////////1NTT/y4uOf8DA3j/CAi6/wgIuv8ICLr/CAi8/wYGmf8EBDL/FBt8/xAWbf8xMTT/MTI1/xAW
+        bP8UG33/BAQy/wYGmP8ICLz/CAi6/wgIuv8ICLv/AwN5/y0tOP/T09L/////////////////////////
+        ////////////////////////vLy6/xsbMP8AAFr/AQFj/wEBY/8BAWP/AQFl/wAAQP8BAhD/ExqA/xAX
+        bv8QFm3/ExuB/wECEP8AAD//AQFl/wEBY/8BAWP/AQFj/wAAWv8aGjD/urq4////////////////////
+        ///////////////////////////////////+/v7/tLSz/3h4d/95eXj/eXl4/3l5eP95eXj/eXl5/3R0
+        c/8oKTb/FByK/xQcjP8nKDb/dHRz/3l5ef95eXj/eXl4/3l5eP95eXj/eHh3/7Ozsv/+/v7/////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////8DAv/8jJDD/IiMv/76+vf//////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////3h4eP93d3f/////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////hISE/zc2Nv9ycXH/cG9v/3Bvb/9ubW3/jYyM//X1
+        9f//////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////+Eg4P/ADdI/wZ0lv8GcpT/BnOV/wNh
+        f/8mMzf/5ubl////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////4SCgf8GZH//Es3//xLK
+        //8SzP//Da/d/yc9Q//m5eT/////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////hIKB/wVb
+        dv8QvPL/ELnv/xC68f8MoM//JztB/+bl5P//////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //+FhYX/Ch0i/xg+Sf8YPUj/GD1I/xU2P/88QEL/6+rq////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////8HBwf+ko6L/zcnI/8vIx//LyMf/ysjH/9jY1//9/f3/////////////////////////
+        ////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
 </root>
