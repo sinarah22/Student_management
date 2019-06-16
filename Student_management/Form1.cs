@@ -17,6 +17,7 @@ namespace Student_management
         bool Move1;
         bool Move2;
         bool flag;
+
         public Form1()
         {
             InitializeComponent();
@@ -24,12 +25,11 @@ namespace Student_management
             Move1 = false;
             Move2 = false;
             teacherMetroGrid.Hide();
-
+            
         }
         int selectedRow;
         DataTable table = new DataTable();
-        
-        
+
 
 
         private void TeacherBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -100,8 +100,9 @@ namespace Student_management
             timer1.Start();
             Move2 = true;
             teacherMetroGrid.Hide();
-            
-          
+
+
+
 
         }
 
@@ -184,5 +185,25 @@ namespace Student_management
             
         }
 
+
+        private void PictureBox1_Click_1(object sender, EventArgs e)
+        {
+            //  void DisplayImage()
+            //  {
+            //      PictureBox pictureBox1 = new PictureBox();
+            //      pictureBox1.Location = new Point(899, 60);
+            //      this.Controls.Add(pictureBox1);
+            //      pictureBox1.Load(@"C:\Users\Sina\source\repos\Student_management\attach\x.gif");
+            //  }
+        }
+       // private void AnimImage()
+       // {
+       //     pictureBox1.Enabled = true;
+       //     pictureBox1.Visible = true;
+       //     System.Threading.Thread.Sleep(5000);
+       //     //system.... is to put delay when application starts
+       //     pictureBox1.Visible = false;
+       //     pictureBox1.Enabled = false;
+       // }
     }
 }

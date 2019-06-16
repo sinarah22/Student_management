@@ -14,3 +14,4 @@ C:\Users\Sina\source\repos\Student_management\Student_management\bin\Debug\Metro
 C:\Users\Sina\source\repos\Student_management\Student_management\bin\Debug\MetroFramework.dll
 C:\Users\Sina\source\repos\Student_management\Student_management\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Sina\source\repos\Student_management\Student_management\obj\Debug\Student_management.csproj.CopyComplete
+C:\Users\Sina\source\repos\Student_management\Student_management\obj\Debug\Student_management.Form2.resources

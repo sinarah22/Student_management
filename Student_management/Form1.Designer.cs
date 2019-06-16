@@ -40,14 +40,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.last_NameTextBox = new System.Windows.Forms.TextBox();
+            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.student_info = new Student_management.student_info();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.miniToolStrip = new System.Windows.Forms.BindingNavigator(this.components);
             this.gradeTextBox = new System.Windows.Forms.TextBox();
@@ -60,14 +60,14 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.teacherBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.student_info = new Student_management.student_info();
-            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.teacherBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableTableAdapter = new Student_management.student_infoTableAdapters.TableTableAdapter();
             this.tableAdapterManager = new Student_management.student_infoTableAdapters.TableAdapterManager();
             this.teacherTableAdapter = new Student_management.student_infoTableAdapters.TeacherTableAdapter();
             this.teacherBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.teacherBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             gradeLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             last_NameLabel = new System.Windows.Forms.Label();
@@ -76,11 +76,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.student_info)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.miniToolStrip)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherMetroGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.student_info)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource3)).BeginInit();
@@ -162,36 +162,6 @@
             this.panel1.Size = new System.Drawing.Size(312, 530);
             this.panel1.TabIndex = 10;
             // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Student_management.Properties.Resources.teacher;
-            this.button2.Location = new System.Drawing.Point(13, 300);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(299, 121);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Teachers";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Student_management.Properties.Resources.student2;
-            this.button1.Location = new System.Drawing.Point(13, 127);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(299, 121);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Students";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
@@ -243,6 +213,16 @@
             this.last_NameTextBox.Name = "last_NameTextBox";
             this.last_NameTextBox.Size = new System.Drawing.Size(156, 30);
             this.last_NameTextBox.TabIndex = 12;
+            // 
+            // tableBindingSource
+            // 
+            this.tableBindingSource.DataMember = "Table";
+            this.tableBindingSource.DataSource = this.student_info;
+            // 
+            // student_info
+            // 
+            this.student_info.DataSetName = "student_info";
+            this.student_info.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // nameTextBox
             // 
@@ -404,16 +384,6 @@
             this.teacherBindingSource1.DataMember = "Teacher";
             this.teacherBindingSource1.DataSource = this.student_info;
             // 
-            // student_info
-            // 
-            this.student_info.DataSetName = "student_info";
-            this.student_info.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tableBindingSource
-            // 
-            this.tableBindingSource.DataMember = "Table";
-            this.tableBindingSource.DataSource = this.student_info;
-            // 
             // teacherBindingSource
             // 
             this.teacherBindingSource.DataMember = "Teacher";
@@ -444,6 +414,36 @@
             this.teacherBindingSource3.DataMember = "Teacher";
             this.teacherBindingSource3.DataSource = this.student_info;
             // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::Student_management.Properties.Resources.teacher;
+            this.button2.Location = new System.Drawing.Point(13, 300);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(299, 121);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Teachers";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Student_management.Properties.Resources.student2;
+            this.button1.Location = new System.Drawing.Point(13, 127);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(299, 121);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Students";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
@@ -473,16 +473,16 @@
             this.Style = MetroFramework.MetroColorStyle.Silver;
             this.Text = "Form1";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.TransparencyKey = System.Drawing.Color.DeepSkyBlue;
+            this.TransparencyKey = System.Drawing.Color.PaleGreen;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.student_info)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.miniToolStrip)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherMetroGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.student_info)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource3)).EndInit();
